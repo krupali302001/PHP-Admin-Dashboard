@@ -23,6 +23,7 @@ $query = sqlsrv_query($Con, $sql);
                 <th>Last Name</th>
                 <th>Contact Number</th>
                 <th>Email</th>
+                <th>Address</th>
                 <th>Departmanet</th>
                 <th>Designation</th>
                 <th>Joined Date</th>
@@ -48,6 +49,7 @@ $query = sqlsrv_query($Con, $sql);
                     <td class="lastName"><?php echo $row['lastName'] ?></td>    
                     <td class="contact_number"><?php echo $row['contact_number'] ?></td>
                     <td class="email"><?php echo $row['email'] ?></td>
+                    <td>Address</td>
                     <td class="department"><?php echo $row['department'] ?></td>
                     <td class="designation"><?php echo $row['designation'] ?></td>
                     <td class="join_date"><?php echo $date_of_joining?></td>
@@ -214,6 +216,7 @@ $query = sqlsrv_query($Con, $sql);
                 'pageLength',
                 'copyHtml5',
                 'excelHtml5',
+                'pdfHtml5'
             ]
         });
     });
