@@ -73,7 +73,7 @@ $row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC);
 </body>
 <div class="header">
     <div class="name">
-        <img class="" src="../pages/profile/<?php echo $row['profile_image']; ?>" alt="profile_image" width="150px" height="150px">
+        <img class="image" src="../pages/profile/<?php echo $row['profile_image']; ?>" alt="profile_image" width="150px" height="150px">
         <!-- Name -->
         <h3 class="firstname"><?php echo $row['firstName'] ?></h3>
         <br>
