@@ -66,8 +66,8 @@ if (isset($_POST['save'])) {
     $gender = $_POST['gender'];
     $birthdate = $_POST['birthdate'];
 
-    $sql = "INSERT into user_data (emp_id, first_name, middle_name, last_name, education, contact_number,email_id,address,designation,date_of_joining,salary,martial_status,gender,birthdate,profile_image,isActive) 
-                values ('$emp_id', '$first_name', '$middle_name', '$last_name', '$education', '$contact_number','$email_id','$address','$designation','$date_of_joining','$salary','$martial_status','$gender','$birthdate','$profile_image','1')";
+    $sql = "INSERT into user_data (emp_id, first_name, middle_name, last_name, education, contact_number,email_id,designation,date_of_joining,salary,martial_status,gender,birthdate,profile_image,isActive) 
+                values ('$emp_id', '$first_name', '$middle_name', '$last_name', '$education', '$contact_number','$email_id','$designation','$date_of_joining','$salary','$martial_status','$gender','$birthdate','$profile_image','1')";
     $run = sqlsrv_query($Con, $sql);
 
     if ($updateQuery === false) {

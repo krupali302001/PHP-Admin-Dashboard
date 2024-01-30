@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include('includes/dbcon.php');
 if(isset($_POST['save'])){
     $empid = $_POST['empid'];
@@ -14,6 +15,8 @@ if(isset($_POST['save'])){
     $row = sqlsrv_fetch_array($run, SQLSRV_FETCH_ASSOC);
 
     if($count == 1){
+        $_SESSION['empname']=$row['empname'];
+        
         header("location: pages/index.php");
     }else{
         ?>
