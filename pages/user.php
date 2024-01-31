@@ -37,10 +37,6 @@ $query = sqlsrv_query($Con, $sql);
                 while ($row = SQLSRV_FETCH_ARRAY($query, SQLSRV_FETCH_ASSOC)) {
                     $ID = $row['ID'];
                     $img_path="http://localhost/Project1/pages/profile/";
-                    $raw_date_date_of_joining = $row['join_date'];
-                    $date_of_joining = date('Y-m-d', strtotime($raw_date_date_of_joining->format('Y-m-d')));
-                    $raw_date_birtdate = $row['DOB'];
-                    $birthdate = date('Y-m-d', strtotime($raw_date_birtdate->format('Y-m-d')));
                 ?>
                 <tr>
                     <td><img src="<?php echo $img_path.$row['profile_image'] ?>" alt="profile_image" width="40px" height="40px"></td>
@@ -52,7 +48,7 @@ $query = sqlsrv_query($Con, $sql);
                     <td>Address</td>
                     <td class="department"><?php echo $row['department'] ?></td>
                     <td class="designation"><?php echo $row['designation'] ?></td>
-                    <td class="join_date"><?php echo $date_of_joining?></td>
+                    <td class="join_date"><?php echo $row['join_date']->format('Y-m-d');?></td>
                     <td ><a href="user_data_update.php?id=<?php echo $row['ID']?>" class="btn btn-primary edit"><i class='bx bxs-edit'></i>&nbsp;&nbsp;Edit</a></td>
                     <td><button  type="button" class="btn btn-danger delete" id="<?php echo $row['ID'];?>">Delete</button></td>
                     <td><a href="user_pdf.php?id=<?php echo $row['ID']?>" class="btn btn-warning"><i class='bx bxs-file-pdf'></i></a></td>
