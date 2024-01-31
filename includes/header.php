@@ -50,10 +50,10 @@ include('session.php');
                     <div class="nav_list">
                          <a href="../pages/index.php" class="nav_link" id="dashboard"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> 
                          <a href="../pages/user.php" class="nav_link" id="userPage"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a>
-                         <a href="../pages/report.php" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a>
-                         <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> 
+                         <a href="../pages/report.php" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Report</span> </a>
+                         <a href="../pages/memo_add.php" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Memo</span> </a> 
                          <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a>
-                         <a href="../graph.php" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a>
+                         <a href="../pages/graph.php" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a>
                     </div>
                 </div> <a href="http://localhost/Project1/includes/session.php?action=logout" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
             </nav>
